@@ -2,34 +2,30 @@
 #include<string.h>
 int main()
 {
-    int n,i,j=0;
+    int n,i,j=0,k;
     scanf("%d",&n);
-    char word[n][1000],tmp[n][1000],t[1000];
+    char word[n][1000],tmp[1000];
     for(i=0;i<n;i++)
     {
         scanf("%s",word[i]);
-        strcpy(tmp[i],word[i]);
     }
-    i=1;
-    while(i<n-1)
+    for(i=0;i<n;i++)
     {
-        if(strmp(tmp[i-1][j],word[i][j])==0)
+        for(j=i+1;j<n;j++)
         {
-            j++;
-            continue;
-        }
-        else
-        {
-            if(tmp[i][j]<word[i][j])
+            if(strcmp(word[i],word[j])>0)
             {
-                strcpy(,)
+                strcpy(tmp,word[i]);
+                strcpy(word[i],word[j]);
+                strcpy(word[j],tmp);
             }
         }
-        j=0;
-        i++;
     }
-
-
+    printf("\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%s\n",word[i]);
+    }
 
 
 }
