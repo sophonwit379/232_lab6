@@ -5,7 +5,7 @@ int main()
     int n,i,j,w=0,h=0;
     char cha[250];
     scanf("%d",&n);
-    scanf("%s",&cha);
+    scanf("%s",cha);
     char pep[n][n];
     for(i=0;i<n;i++)
     {
