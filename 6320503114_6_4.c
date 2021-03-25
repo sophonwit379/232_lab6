@@ -35,4 +35,6 @@ int main()
         }
     }
     printf("%d %d",first,second);
+
+
 }
